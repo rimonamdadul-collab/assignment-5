@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+    #poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
+</style>
+</head>
+<body class="bg-gray-100 p-6 poppins-extrabold-italic">
+     
+   <section class="w-11/12 mx-auto">
+    
+     <header class="">
+        <nav class="flex items-center justify-between bg-white p-3 rounded-3xl">
+        <div class="flex items-center pl-5">
+            <img onclick="makeYellow()" class="mr-3 w-10" src="A5-Dev-Board/assets/logo.png" alt="">
+            <h1 class=""><span class="">Dev</span><span class="">Board</span></h1>
+        </div>
+        <div class="flex">
+            <button class="btn bg-slate-200 rounded-3xl pr-3"><img src="A5-Dev-Board/assets/checkbox.png" alt=""><span id="number-sum">24</span></button>
+           <button><img class="pl-5 pr-4" src="A5-Dev-Board/assets/theme-btn.png" alt=""></button>
+        </div>
+        </nav>
+    </header>
+    <main class="grid grid-cols-4 mt-14">
+        <section class="bg-white col-span-3 rounded-2xl">
+
+
+          
+
+            <div class="flex  gap-4 p-7">
+
+                <div class="flex card-box bg-[#F4F7FF] pt-8 pr-5 pb-6 pl-5 w-72 rounded-xl">
+                  <img class="rounded-full bg-white p-3 " src="A5-Dev-Board/assets/checkbox.png" alt="">
+                  <div class="ml-3">
+                    <h1 class="text-sm">Task Assigned</h1>
+                  <h2 class="text-xl"><span id="number-diff">05</span></h2>
+                  </div>
+                </div>
+
+                  <div id="Discover" class="flex items-center w-96 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] t-8 pr-5 pb-6 pl-5  rounded-xl">
+                    <img src="A5-Dev-Board/assets/board.png" alt="">
+                    <div>
+                       <h1 class="text-white">Discover Something <br> New Today!                 </h1>
+                    </div>
+                  </div>
+
+                  <div class="flex card-box bg-[#F4F7FF] pt-8 pr-5 pb-6 pl-5 w-72 rounded-xl">
+                  <img class="rounded-full bg-white p-3 " src="A5-Dev-Board/assets/calender.png" alt="">
+                  <div class="ml-3">
+                    <h1 class="text-sm">Wed ,</h1>
+                  <h2 class="text-xl font-bold">Jul 28 2025</h2>
+                  </div>
+                </div>
+
+              </div>
+                     <!-- card box -->
+              <div class="grid grid-cols-3 gap-5 ">
+                 <div class="bg-[#F4F7FF] rounded-2xl p-7 space-y-3 ml-4 mb-5">
+                  <h2 class="bg-white rounded-lg w-28 pr-4 pl-4 text-base">ShopEase</h2>
+                  <h1 class="text-2xl font-medium">Fix Mobile Button Issue</h1>
+                  <h1 class="truncate text[#000000] p-4 bg-white rounded-2xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works claproperlyand ensure onClick works properly</h1>
+                  <div class="flex items-center justify-between">
+                    <p>Deadline <br> 21 March 2025</p>
+                    <button id="ShopEase" class="text-[#FFFFFF] font-medium bg-[#3752FD] pr-5 pl-5 pt-2 pb-2 rounded-xl">Completed</button>
+                  </div> 
+                </div>
+
+                     <!-- card2 -->
+
+                     <div class="bg-[#F4F7FF] rounded-2xl p-7 space-y-3 ml-4 mb-5">
+                  <h2 class="bg-white rounded-lg w-28 pr-4 pl-4 text-base">CloudSync</h2>
+                  <h1 class="text-2xl font-medium">Add Dark Mode</h1>
+                  <h1 class="truncate text[#000000] p-4 bg-white rounded-2xl">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</h1>
+                  <div class="flex items-center justify-between">
+                    <p>Deadline <br> 21 March 2025</p>
+                    <button id="CloudSync" class="text-[#FFFFFF] font-medium bg-[#3752FD] pr-5 pl-5 pt-2 pb-2 rounded-xl">Completed</button>
+                  </div> 
+                </div>
+
+                <!-- card3 -->
+                 <div class="bg-[#F4F7FF] rounded-2xl p-7 space-y-3 ml-4 mb-5 mr-4">
+                  <h2 class="bg-white rounded-lg w-28 pr-4 pl-4 text-base">SwiftPay</h2>
+                  <h1 class="text-2xl font-medium">Optimize  Home page </h1>
+                  <h1 class="truncate text[#000000] p-4 bg-white rounded-2xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+and ensure onClick works properly</h1>
+                  <div class="flex items-center justify-between">
+                    <p>Deadline <br> 21 March 2025</p>
+                    <button id="Optimize" class="text-[#FFFFFF] font-medium bg-[#3752FD] pr-5 pl-5 pt-2 pb-2 rounded-xl">Completed</button>
+                  </div> 
+                </div>
+
+                <!-- card4 -->
+
+                <div class="bg-[#F4F7FF] rounded-2xl p-7 space-y-3 ml-4 mb-5">
+                  <h2 class="bg-white rounded-lg w-28 pr-4 pl-4 text-base">Meta</h2>
+                  <h1 class="text-2xl font-medium">Add new emoji 🤲</h1>
+                  <h1 class="truncate text[#000000] p-4 bg-white rounded-2xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+and ensure onClick works properly2</h1>
+                  <div class="flex items-center justify-between">
+                    <p>Deadline <br> 21 March 2025</p>
+                    <button id="Meta" class="text-[#FFFFFF] font-medium bg-[#3752FD] pr-5 pl-5 pt-2 pb-2 rounded-xl">Completed</button>
+                  </div> 
+                </div>
+
+
+                <!-- card5 -->
+                 <div class="bg-[#F4F7FF] rounded-2xl p-7 space-y-3 ml-4 mb-5">
+                  <h2 class="bg-white rounded-lg w-36 pr-4 pl-4 text-base">Google LLC</h2>
+                  <h1 class="text-2xl font-medium">Fix Mobile Button Issue</h1>
+                  <h1 class="truncate text[#000000] p-4 bg-white rounded-2xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works claproperlyand ensure onClick works properly</h1>
+                  <div class="flex items-center justify-between">
+                    <p>Deadline <br> 21 March 2025</p>
+                    <button id="Fix" class="text-[#FFFFFF] font-medium bg-[#3752FD] pr-5 pl-5 pt-2 pb-2 rounded-xl">Completed</button>
+                  </div> 
+                </div>
+
+                <!-- card6 -->
+                 <div class="bg-[#F4F7FF] rounded-2xl p-7 space-y-3 ml-4 mb-5 mr-4">
+                  <h2 class="bg-white rounded-lg w-28 pr-4 pl-4 text-base">ShopEase</h2>
+                  <h1 class="text-2xl font-medium">Fix Mobile Button Issue</h1>
+                  <h1 class="truncate text[#000000] p-4 bg-white rounded-2xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works claproperlyand ensure onClick works properly</h1>
+                  <div class="flex items-center justify-between">
+                    <p>Deadline <br> 21 March 2025</p>
+                    <button id="ShopEase" class="text-[#FFFFFF] font-medium bg-[#3752FD] pr-5 pl-5 pt-2 pb-2 rounded-xl">Completed</button>
+                  </div> 
+                </div>
+  
+              </div>
+
+     </section>
+     <section class="grid row-span-3 bg-white rounded-2xl ml-5">
+    <div id="ShopEase-div" class="">
+
+       <div class="flex items-center justify-center mt-4">
+      <img src="A5-Dev-Board/assets/activity.png" alt="">
+      <h1 class="ml-2 font-medium">Activity Log</h1>
+    </div>
+     <div class="flex justify-center mt-4">
+      <button id="btn-clear" class="text-[#FFFFFF] font-medium bg-[#3752FD] pr-5 pl-5 pt-2 pb-2 rounded-xl">Clear History</button>
+     </div>
+    </div>
+    </section>
+    </main>
+   </section>
+   <script>
+    function makeYellow(){
+      document.body.style.backgroundColor='yellow'
+    }
+   </script>
+   <script src="js/togglle.js"></script>
+   <script src="js/box.js"></script>
+</body>
+</html>
